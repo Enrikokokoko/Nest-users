@@ -9,7 +9,7 @@ export class User {
   @Prop()
   fullName: string;
 
-  @Prop()
+  @Prop({ unique: true })
   email: string;
 
   @Prop()
